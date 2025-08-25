@@ -16,7 +16,7 @@ module pe #(
     output logic signed [IW-1:0] b_out,
     
     output logic signed [AW-1:0] acc_out
-    );
+);
     
     logic signed [2*IW-1:0] prod;
     

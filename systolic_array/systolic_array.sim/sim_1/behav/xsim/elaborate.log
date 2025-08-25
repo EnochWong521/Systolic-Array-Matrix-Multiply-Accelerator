@@ -1,0 +1,21 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pe_tb_behav xil_defaultlib.pe_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/Enoch/Git/Systolic-Array-Matrix-Multiply-Accelerator/systolic_array/systolic_array.srcs/sim_1/new/pe_tb.sv:65]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/Enoch/Git/Systolic-Array-Matrix-Multiply-Accelerator/systolic_array/systolic_array.srcs/sim_1/new/pe_tb.sv:68]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [C:/Users/Enoch/Git/Systolic-Array-Matrix-Multiply-Accelerator/systolic_array/systolic_array.srcs/sim_1/new/pe_tb.sv:71]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 65, File C:/Users/Enoch/Git/Systolic-Array-Matrix-Multiply-Accelerator/systolic_array/systolic_array.srcs/sim_1/new/pe_tb.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 68, File C:/Users/Enoch/Git/Systolic-Array-Matrix-Multiply-Accelerator/systolic_array/systolic_array.srcs/sim_1/new/pe_tb.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 71, File C:/Users/Enoch/Git/Systolic-Array-Matrix-Multiply-Accelerator/systolic_array/systolic_array.srcs/sim_1/new/pe_tb.sv
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.pe_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pe_tb_behav
