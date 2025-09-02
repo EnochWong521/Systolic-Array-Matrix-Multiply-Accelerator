@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/Enoch/Git/Systolic-Array-Matrix-Multiply-Accelerator/systolic_array/systolic_array.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/Enoch/Git/systolic-array-accelerator/systolic_array/systolic_array.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="70466920dd7e4f4ba8bb252d5f299eb1"/>
@@ -98,7 +98,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/systolic_top_4x4.sv">
+      <File Path="$PSRCDIR/sources_1/new/systolic_top.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

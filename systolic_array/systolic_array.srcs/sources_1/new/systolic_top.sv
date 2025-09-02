@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module systolic_top_4x4 #(
+module systolic_top #(
     parameter int N = 4,
     parameter int IW = 8,
     parameter int AW = 20
@@ -30,7 +30,11 @@ module systolic_top_4x4 #(
     // left
     logic signed [IW-1:0] a_in_row [N];
     // top 
-    logic signed [IW-1:0] b_in_row [N];
+    logic signed [IW-1:0] b_in_col [N];
+    
+    // interconnect wires
+    logic signed [IW-1:0] a_wire [N][N];
+    logic signed [IW-1:0] b_wire [N][N];
     
     // FSM logic 
     always_ff @(posedge clk or negedge reset_n) begin
@@ -75,6 +79,28 @@ module systolic_top_4x4 #(
                     end 
                 end
             endcase 
+        end
+    end
+    
+    int unsigned i, j;
+     
+    always_comb begin
+        for (i = 0; i < N; i++) begin
+            if ((t >= i) && ((t - i) < N)) begin
+                a_in_row[i] = A[i][t - i];
+            end
+            else
+                a_in_row[i] = '0; 
+        end
+    end
+    
+    always_comb begin 
+        for (j = 0; j < N; j++) begin
+            if ((t >= j) && ((t - j) < N)) begin
+                b_in_col[j] = B[j][t - j];
+            end
+            else 
+                b_in_col[j] = '0;
         end
     end
 
